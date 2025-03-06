@@ -6,8 +6,3 @@
 This is a Retrieval-augmented generation pipeline implementation using Azure Cognitive Search for vector storage, Langchain and Hugginface transformers for integrating an open-source LLM.
 
 <br />
-
-
-<h2>Languages Used</h2>
-
-- <b>Dart</b>
