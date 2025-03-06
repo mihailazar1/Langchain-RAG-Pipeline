@@ -4,15 +4,9 @@ from dotenv import load_dotenv
 from azure.storage.blob import BlobServiceClient
 from langchain_community.document_loaders import AzureBlobStorageContainerLoader
 
-
-
 load_dotenv()
 
-
 directory_path = "Data"
-
-
-
 STORAGE_CONNECTION_STRING = ""
  
 blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
