@@ -10,7 +10,6 @@ from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 
 from cognitive_search import store_embeddings, get_similar_content, get_specific_index_ids, delete_index_chunks_by_id, get_all_index_ids, get_all_sources
 
-# For the LLM
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from model import get_model_response
@@ -34,8 +33,6 @@ def validate_email(email):
     else:
         return False
 
-
-
 secret = secrets.token_hex(16)
 
 
@@ -58,7 +55,7 @@ class User(db.Model):
 
 
 
-def token_required(f): # f is a function that is decorated
+def token_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         token = None
@@ -229,7 +226,6 @@ def create_app():
 
         return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login required ! !"'})
 
-    #######################################################################################################################################
 
 
 
@@ -266,8 +262,6 @@ def create_app():
 
         return jsonify(response)    
     
-
-
 
     @application.route("/api/query_specific", methods=["GET"])
     @token_required
