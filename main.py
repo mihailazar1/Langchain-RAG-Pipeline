@@ -17,8 +17,6 @@ instructor_embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instruc
                                                       model_kwargs={"device": "cuda"})
 
 
-
-
 vector_store: AzureSearch = AzureSearch(
     azure_search_endpoint=os.environ.get('AZURE_COGNITIVE_SEARCH_ADDRESS'),
     azure_search_key=os.environ.get('AZURE_COGNITIVE_SEARCH_API_KEY'),
