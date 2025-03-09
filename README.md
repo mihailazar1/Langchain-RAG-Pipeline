@@ -2,7 +2,6 @@
 
 <h1>Azure & Langchain RAG Pipeline</h1>
 
-<h2>Description</h2>
 This is a Retrieval-augmented generation pipeline implementation using Azure Cognitive Search, Langchain and Hugging Face Transformers.
 
 This project aims to implement a more effective search method for large text datasets using a vector database. Instead of relying on simple keyword matching, this approach leverages embeddings—numerical representations of text that capture semantic meaning.
