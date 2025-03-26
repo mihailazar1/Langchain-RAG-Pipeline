@@ -39,7 +39,7 @@ secret = secrets.token_hex(16)
 application = Flask(__name__)
 CORS(application)
 
-application.config['SECRET_KEY'] = 'thisissecret' # = secret
+application.config['SECRET_KEY'] = 'TNuX12Xlh3'
 application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ragdb.sqlite3'
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
